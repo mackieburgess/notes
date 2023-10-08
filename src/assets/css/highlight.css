@@ -1,0 +1,96 @@
+:root {
+  --nc:      #f8f0e7;
+  --base:    #faf4ed;
+  --surface: #fffaf3;
+  --overlay: #f2e9e1;
+  --muted:   #9893a5;
+  --subtle:  #797593;
+
+  --text:    #575279;
+  --love:    #b4637a;
+  --gold:    #ea9d34;
+  --rose:    #d7827e;
+  --pine:    #286983;
+  --foam:    #56949f;
+  --iris:    #907aa9;
+
+  --fg:      #333333;
+  --comment: #7f7f7f;
+  --blue:    #00b3e3;
+  --green:   #4fb000;
+  --magenta: #ff004b;
+  --orange:  #ff4d00;
+  --purple:  #6054d0;
+  --yellow:  #ff8f00;
+
+}
+
+/*
+.hljs {
+  color: var(--text);
+}
+
+.hljs .hljs-keyword {
+  color: var(--pine);
+}
+
+.hljs .hljs-title {
+  color: var(--love)
+}
+
+.hljs .hljs-built_in {
+  color: var(--rose);
+}
+
+.hljs .hljs-string {
+  color: var(--gold);
+}
+
+.hljs .hljs-literal {
+  color: var(--foam);
+}
+
+.hljs .hljs-number {
+  color: var(--gold);
+}
+
+.hljs .hljs-attr {
+  color: var(--iris);
+}
+*/
+
+.hljs {
+  color: var(--fg);
+}
+
+/*
+.hljs .hljs-keyword {
+  color: var(--magenta);
+}
+
+.hljs .hljs-title {
+  color: var(--orange);
+}
+
+.hljs .hljs-string {
+  color: var(--yellow);
+}
+
+.hljs .hljs-number {
+  color: var(--purple);
+}
+
+/1* .hljs .hljs-variable *1/
+
+.hljs .hljs-attr {
+  color: var(--green);
+}
+
+.hljs .hljs-tag .hljs-name {
+  color: var(--blue);
+}
+
+.hljs .hljs-comment {
+  color: var(--comment);
+}
+*/

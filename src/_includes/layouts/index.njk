@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>notes | Mackie Burgess</title>
+    <link rel='stylesheet' type='text/css' href='assets/css/screen.css' />
+  </head>
+  <body>
+    <header>
+      <h1>notes.mackieburgess</h1>
+      <p>What I think about while reading things.</p>
+    </header>
+    <main>
+      {%- for log in search.pages("type=log", "date=desc") -%}
+      <article>
+        <div class='headline'>
+          <p class='date'>{{- log.data.date | date("DATE") -}}</p>
+          <h2 id='{{ log.data.date | date("yyyy-MM-dd_hhmm")}}'>
+            {{- log.data.title -}}
+          </h2>
+
+          {%- if log.data.ref_link -%}
+          <a href='{{ log.data.ref_link }}' target='_blank'>
+            <span class='link-underline'>
+              {{- log.data.ref_title or log.data.ref_link -}}
+            </span>
+            &UpperRightArrow;
+          </a>
+          {%- endif -%}
+        </div>
+
+        <div class='content'>
+          {{ log.data.content | md | safe }}
+        </div>
+      </article>
+      {%- endfor -%}
+      <p class='end-piece'>~ fin ~</p>
+    </main>
+    <footer>
+      &copy; Mackie Burgess, 2023–
+    </footer>
+  </body>
+</html>

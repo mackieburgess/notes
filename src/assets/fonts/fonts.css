@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('Inter-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('Inter-SemiBold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('Inter-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('Inter-SemiBoldItalic.woff2') format('woff2');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fira Mono';
+    src: url('FiraMono-Regular-Subset.woff2') format('woff2'),
+        url('FiraMono-Regular-Subset.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --inter: 'Inter', Helvetica, arial, sans-serif;
+    --fira: 'Fira Mono', monospace;
+}
+
+* {
+  font-family: var(--inter);
+  font-feature-settings: 'calt', 'dlig', 'ss01';
+}
+
+code, kbd *, pre * {
+  font-family: var(--fira);
+}

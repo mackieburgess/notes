@@ -1,0 +1,5 @@
+_site/
+
+src/logs/*
+!src/logs/_example.md
+
