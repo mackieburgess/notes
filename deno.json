@@ -3,6 +3,7 @@
     "lume": "echo \"import 'lume/cli.ts'\" | deno run --unstable -A -",
     "build": "deno task lume",
     "serve": "deno task lume -s"
+    "deploy": "deno task build && rsync -r _site/ $PERSONAL_SERVER:/var/www/notes-mackieburgess-com"
   },
   "imports": {
     "lume/": "https://deno.land/x/lume@v1.19.1/"
