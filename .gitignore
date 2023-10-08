@@ -2,4 +2,5 @@ _site/
 
 src/logs/*
 !src/logs/_example.md
+!src/logs/_data.yml
 
