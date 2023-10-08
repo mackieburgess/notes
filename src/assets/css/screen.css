@@ -20,6 +20,10 @@ p {
   line-height: 1.65;
 }
 
+ul {
+  line-height: 1.5;
+}
+
 body {
   margin: 0;
 
@@ -89,8 +93,20 @@ pre {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
   color: black;
+  border-radius: 2px;
+  padding-inline: 2px;
+}
+
+.content a:hover,
+.content a:focus-visible {
+  background: black;
+  color: white;
+}
+
+.headline a {
+  text-decoration: none;
 }
 
 .link-underline {
@@ -110,7 +126,8 @@ a {
   transition: all 0.15s ease-in-out;
 }
 
-.link-underline:hover::after {
+.link-underline:hover::after,
+.link-underline:focus-visible::after {
   background: #bae6fd;
 }
 
